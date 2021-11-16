@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Extension\ServiceExtension.cs" />
+    <Compile Remove="Migrations\20210824151642_customerStatus.cs" />
+    <Compile Remove="Migrations\20210824151642_customerStatus.Designer.cs" />
+    <Compile Remove="Migrations\20210917173017_scheme-code-update.cs" />
+    <Compile Remove="Migrations\20210917173017_scheme-code-update.Designer.cs" />
+    <Compile Remove="Migrations\20210917173736_scheme-code-update.cs" />
+    <Compile Remove="Migrations\20210917173736_scheme-code-update.Designer.cs" />
+    <Compile Remove="Migrations\20210917175119_scheme-code-update.cs" />
+    <Compile Remove="Migrations\20210917175119_scheme-code-update.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extension\" />
+  </ItemGroup>
+</Project>
